@@ -38,7 +38,7 @@ def register():
 def login():
     form=Loginform()
     if form.validate_on_submit():
-        if form.Email.data=='kisan@gmail.com' and form.Password.data=='Password':
+        if form.Email.data=='steve@gmail.com' and form.Password.data=='Password':
             flash('You have been logged in !','success')
             return redirect(url_for('home'))
     else:
